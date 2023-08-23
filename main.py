@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 import smtplib
 
-CONFIG_FOLDER = 'sleep'
+CONFIG_FOLDER = 'sleep-alarm'
 
 def email_alert():
 
