@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 import smtplib
 
-CONFIG_PATH = '/home/lpang/sleep'
+CONFIG_FOLDER = 'sleep'
 
 def email_alert():
 
@@ -27,7 +27,7 @@ def email_alert():
     # terminating the session
     s.quit()
 
-os.chdir(CONFIG_PATH)
+os.chdir(os.path.join(os.getcwd(), CONFIG_FOLDER))
 config = configparser.ConfigParser()
 config.read('config.ini')
 
